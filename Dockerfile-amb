@@ -1,0 +1,21 @@
+# Creates image with SSHD server running
+# Adds installatool.sh for installing atool in container (See http://www.kcomputer.jp/ungi/soft/kscope/)
+
+FROM ubuntu:latest
+
+MAINTAINER Peter Bryzgalov @ AICS RIKEN
+
+# Set root password
+RUN echo "root:docker" | chpasswd
+
+# Install SSH
+RUN apt-get install -y ssh
+RUN mkdir -p /var/run/sshd
+
+# Install python
+RUN apt-get install -y python
+
+EXPOSE 22
+
+CMD ["/usr/sbin/sshd","-D"]
+

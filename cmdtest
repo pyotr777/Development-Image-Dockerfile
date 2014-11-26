@@ -1,0 +1,5 @@
+_defcmd () {
+    printf "%s\n%-10s %s\n\n" "$HELP" "$1" "$2"
+}
+
+_defcmd autoadd "Add commands executed with 'sudo' to Dockerfile, and rebuild."
