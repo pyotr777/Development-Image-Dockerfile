@@ -12,7 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 call vundle#end()
 filetype plugin indent on
-
+set mouse=a
 set number
 syntax on
 colorscheme Mustang
