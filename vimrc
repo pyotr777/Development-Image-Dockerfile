@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'fatih/vim-go'
 call vundle#end()
 filetype plugin indent on
 

@@ -1,3 +1,9 @@
+# Development environment. Includes:
+# vim
+# python
+# git
+# sshfs
+#
 # Creates image with SSHD server 
 
 FROM ubuntu:14.04
