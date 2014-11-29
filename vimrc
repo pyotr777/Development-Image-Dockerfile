@@ -13,7 +13,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'fatih/vim-go'
 call vundle#end()
 filetype plugin indent on
-
+set mouse=a
 set number
 syntax on
 colorscheme Mustang
